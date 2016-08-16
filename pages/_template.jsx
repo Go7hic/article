@@ -13,9 +13,9 @@ class Template extends React.Component {
 
         return (
             <div className='wrapper'>
-              { children }
+                { children }
             </div>
-            );
+        );
     }
 }
 

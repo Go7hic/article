@@ -1,8 +1,7 @@
-
 ---
 layout: post
-title: 【译】React 基础理论概念
-date: 2016-06-20 11:21:04
+title: React 基础理论概念【译】
+date: 2016-06-02 11:21:04
 tags: React
 ---
 

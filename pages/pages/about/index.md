@@ -1,9 +1,9 @@
 ---
-title: "About me"
+title: "About"
 layout: page
 path: "/about"
 ---
 
-每一个博客都有过去：http://dyygtfx.github.io
+>每一个博客都有过去：http://dyygtfx.github.io
 
 程序员
