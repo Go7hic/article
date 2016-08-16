@@ -1,2 +1,0 @@
-# article
-my new blog
