@@ -1,11 +1,11 @@
 siteTitle = "Go7hic"
-siteDescr = "Blog"
+siteDescr = "Programmer & Hacker"
 siteAuthor = "Go7hic"
 
-siteTelegramUrl = "#"
-siteTwitterUrl = "#"
-siteGithubUrl = "#"
-siteEmailUrl = "#"
+siteTelegramUrl = ""
+siteTwitterUrl = "https://twitter.com/Go7hic"
+siteGithubUrl = "https://github.com/dyygtfx"
+siteEmailUrl = "mailto:admin@yongyuan.us"
 siteRssUrl = "#"
 siteVkUrl = "#"
 
