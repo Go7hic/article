@@ -2,7 +2,9 @@
 layout: post
 title: React 基础理论概念【译】
 date: 2016-06-02 11:21:04
-tags: React
+readNext: "/2016-06-04-Virtual-Dom1/"
+category: React
+path: "/2016-06-02-React-Basic/"
 ---
 
 这份文档我试图解释我心中的 react 模式，试图去推导我们这么设计的一些原则。可能有些地方会有争议而且例子的设计可能也有问题，不过这仅仅是个开始，如果你有更好的想法可以发 Pull Request

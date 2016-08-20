@@ -40,8 +40,9 @@ html {
 	box-sizing: border-box;
 	font-size: 16px;
 	font-size: 100%;
-	font-family: "Roboto", Arial, sans-serif;
-	color: #222;
+	font-family: "PingFang SC",Hiragino Sans GB,Microsoft YaHei,STHeiti,WenQuanYi Micro Hei,Helvetica,Arial,sans-serif;
+	color: #333;
+	letter-spacing: 1px;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
@@ -185,7 +186,7 @@ figure {
    ========================================================================== */
 h1 {
 	font-size: 40px;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	line-height: 52px;
 	line-height: 3.25rem;
 	margin-top: 104px;
@@ -195,7 +196,7 @@ h1 {
 }
 h2 {
 	font-size: 27px;
-	font-size: 1.6875rem;
+	font-size: 1.5rem;
 	line-height: 39px;
 	line-height: 2.4375rem;
 	margin-top: 65px;
@@ -205,7 +206,7 @@ h2 {
 }
 h3 {
 	font-size: 22px;
-	font-size: 1.375rem;
+	font-size: 1.2rem;
 	line-height: 26px;
 	line-height: 1.625rem;
 	margin-top: 52px;
@@ -215,7 +216,7 @@ h3 {
 }
 h4 {
 	font-size: 19.2px;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	line-height: 26px;
 	line-height: 1.625rem;
 	margin-top: 39px;
@@ -225,7 +226,7 @@ h4 {
 }
 h5 {
 	font-size: 16px;
-	font-size: 1rem;
+	font-size: 0.8rem;
 	line-height: 26px;
 	line-height: 1.625rem;
 	margin-top: 65px;
@@ -235,7 +236,7 @@ h5 {
 }
 h6 {
 	font-size: 16px;
-	font-size: 1rem;
+	font-size: 0.6rem;
 	line-height: 26px;
 	line-height: 1.625rem;
 	margin-top: 65px;
@@ -246,7 +247,7 @@ h6 {
 @media screen and (min-width:40em) {
 	h1 {
 		font-size: 40px;
-		font-size: 2.5rem;
+		font-size: 2rem;
 		line-height: 62px;
 		line-height: 3.444444444444445rem;
 		margin-top: 124px;
@@ -256,7 +257,7 @@ h6 {
 	}
 	h2 {
 		font-size: 27px;
-		font-size: 1.6875rem;
+		font-size: 1.5rem;
 		line-height: 46.5px;
 		line-height: 2.583333333333334rem;
 		margin-top: 77.5px;
@@ -266,7 +267,7 @@ h6 {
 	}
 	h3 {
 		font-size: 22px;
-		font-size: 1.375rem;
+		font-size: 1.2rem;
 		line-height: 31px;
 		line-height: 1.722222222222222rem;
 		margin-top: 62px;
@@ -276,7 +277,7 @@ h6 {
 	}
 	h4 {
 		font-size: 19.2px;
-		font-size: 1.2rem;
+		font-size: 1rem;
 		line-height: 31px;
 		line-height: 1.722222222222222rem;
 		margin-top: 46.5px;
@@ -286,7 +287,7 @@ h6 {
 	}
 	h5 {
 		font-size: 16px;
-		font-size: 1rem;
+		font-size: 0.8rem;
 		line-height: 31px;
 		line-height: 1.722222222222222rem;
 		margin-top: 77.5px;
@@ -296,7 +297,7 @@ h6 {
 	}
 	h6 {
 		font-size: 16px;
-		font-size: 1rem;
+		font-size: 0.6rem;
 		line-height: 31px;
 		line-height: 1.722222222222222rem;
 		margin-top: 77.5px;

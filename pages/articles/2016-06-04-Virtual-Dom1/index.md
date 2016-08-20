@@ -2,7 +2,7 @@
 layout: post
 title: 动手写一个简单的 Virtual Dom（1）
 date: 2016-06-04 11:21:04
-tags: React
+category: React
 ---
 
 Virtual Dom 又叫虚拟 DOM，随着 React 一起火起来的一个概念。虚拟 DOM 做到极致能够极大的提升性能，据说 Vue2 的 Virtual DOM 实现性能提升了很高。不过这些我们暂时不管，我们只要知道大致原理就可以自己来试着实现一个类似的乞丐版 Virtual Dom。

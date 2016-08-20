@@ -6,7 +6,7 @@ import SiteNav from '../SiteNav'
 import SiteLinks from '../SiteLinks'
 import './style.css'
 import profilePic from '../../pages/photo.jpg'
-
+import siteLogo from "../../static/img/logo.png"
 class SiteSidebar extends React.Component {
   render() {
     const {location, children} = this.props
@@ -18,9 +18,9 @@ class SiteSidebar extends React.Component {
           <img src={prefixLink(profilePic) } width='75' height='75' />
         </Link>
         { isHome ? (
-          <h1><Link style={ { textDecoration: 'none', borderBottom: 'none', color: 'inherit' } } to={ prefixLink('/') }> { config.siteAuthor } </Link></h1>
+          <h1><Link style={ { textDecoration: 'none', borderBottom: 'none', color: 'inherit' } } to={ prefixLink('/') }> <img src={ siteLogo } alt="logo"/> </Link></h1>
         ) :
-          <h2><Link style={ { textDecoration: 'none', borderBottom: 'none', color: 'inherit' } } to={ prefixLink('/') }> { config.siteAuthor } </Link></h2> }
+          <h2><Link style={ { textDecoration: 'none', borderBottom: 'none', color: 'inherit' } } to={ prefixLink('/') }> <img src={ siteLogo } alt="logo"/></Link></h2> }
         <p>
           { config.siteDescr }
         </p>

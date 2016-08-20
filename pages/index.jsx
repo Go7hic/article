@@ -15,22 +15,22 @@ class SiteIndex extends React.Component {
     // Sort pages.
     const sortedPages = sortBy(this.props.route.pages, (page) => access(page, 'data.date')
     ).reverse()
-    sortedPages.forEach((page) => {
+    sortedPages.forEach((page, index) => {
       if (access(page, 'file.ext') === 'md' && access(page, 'data.layout') === 'post') {
         const title = access(page, 'data.title') || page.path
         const description = access(page, 'data.description')
         const datePublished = access(page, 'data.date')
         const category = access(page, 'data.category')
-
+console.log(page.path)
         pageLinks.push(
-          <div className='blog-post'>
-            <time dateTime={ moment(datePublished).format('MMMM D, YYYY') }>
+          <div className='blog-post' key={index}>
+            {/*<time dateTime={ moment(datePublished).format('MMMM D, YYYY') }>
               { moment(datePublished).format('MMMM YYYY') }
             </time>
             <span style={ { padding: '5px' } }></span>
-            <span className='blog-category'>{ category }</span>
+            <span className='blog-category'>{ category }</span>*/}
             <h2><Link style={ { borderBottom: 'none', } } to={ prefixLink(page.path) } > { title } </Link></h2>
-            <p dangerouslySetInnerHTML={ { __html: description } } />
+            {/* <p dangerouslySetInnerHTML={ { __html: description } } /> */}
             
             
           </div>

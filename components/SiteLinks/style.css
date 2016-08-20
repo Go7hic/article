@@ -4,11 +4,11 @@
 .blog-social ul {
 	list-style: none;
 	padding: 0;
-	margin: 10px 0;
+	margin: 10px auto;
 	clear: fix-legacy;
 }
 .blog-social ul > li {
-	float: left;
+	display: inline-block;
 	margin-right: 5px;
 	text-align: center;
 	height: 24px;
