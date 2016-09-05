@@ -490,6 +490,7 @@ describe('getViewState', ({ test }) => {
 #### Redux Rules
 
 如果你用 redux 的姿势正确，你将会获得巨大的好处：
+
 - 消除时间依赖的bug
 * 可预测的试图渲染
 * 可预测的状态复制
@@ -503,7 +504,9 @@ describe('getViewState', ({ test }) => {
 * Reducers 的状态一定要是单一来源
 * Reducer 状态应该总是可序列化的
 * Reducer 状态不应该包含功能
+
 同时也要记住：
+
 - 有的App是没必要用 Redux 的
 * actions types 要用常量
 * 给 ES6 的参数设置默认值
