@@ -24,6 +24,7 @@ pre code {
 	padding: 0.5em 1em;
 	color: #333;
 	background: #f8f8f8;
+	border-left: 1px solid #5d93ff;
 }
 .hljs-comment, .hljs-quote {
 	color: #998;
