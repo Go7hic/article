@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 动手写一个简单的 Virtual Dom（3）
-date: 2016-06-06 11:21:04
+datePublished: '2016-06-06 11:21:04'
 tags: React
 ---
 

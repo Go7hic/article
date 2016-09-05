@@ -1,5 +1,7 @@
 ---
 layout: post
+datePublished: '2016-08-16'
+category: 'web 安全'
 title: 使用 tagget="_blank" 的一个漏洞
 ---
 

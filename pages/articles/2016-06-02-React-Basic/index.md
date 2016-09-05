@@ -1,7 +1,7 @@
 ---
 layout: post
 title: React 基础理论概念【译】
-date: 2016-06-02 11:21:04
+datePublished: '2016-06-02 11:21:04'
 readNext: "/2016-06-04-Virtual-Dom1/"
 category: React
 path: "/2016-06-02-React-Basic/"

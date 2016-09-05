@@ -1,5 +1,6 @@
 ---
 layout: post
+datePublished: '2016-08-27'
 title: React 最佳实践
 category: react
 ---
