@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 优化 Redux 架构的 10 个技巧【译】
-datePublished: '2016-069-04 11:21:04'
+datePublished: '2016-09-04 11:21:04'
 category: React
 ---
 
