@@ -47,10 +47,10 @@ Flux框架所做的就是严格的隔离规范与顺序操作保证这样一种�
 
 简而概之：flux 是针对 ui 的一个单向数据流的架构
 
-[https://cdn-images-1.medium.com/max/800/1*2FrT8oMXswVWiVEfBCXlAQ.png](https://cdn-images-1.medium.com/max/800/1*2FrT8oMXswVWiVEfBCXlAQ.png)
+![https://cdn-images-1.medium.com/max/800/1*2FrT8oMXswVWiVEfBCXlAQ.png](https://cdn-images-1.medium.com/max/800/1*2FrT8oMXswVWiVEfBCXlAQ.png)
 在上面的 Flux 架构中，视图负责监听用户输入并且将之转化为Action对象，然后Action对象会被派发(dispatched)到 Store中。
 store 会更新应用的状态并且通知视图重新渲染。当然，View并非唯一的输入与事件触发源，不过我们也可以通过设置其他的事件监听器来派发其他的Action对象，如下所示：
-[https://cdn-images-1.medium.com/max/800/1*MdaK2tzd5f9BqadwMvPoKg.png](https://cdn-images-1.medium.com/max/800/1*MdaK2tzd5f9BqadwMvPoKg.png)
+![https://cdn-images-1.medium.com/max/800/1*MdaK2tzd5f9BqadwMvPoKg.png](https://cdn-images-1.medium.com/max/800/1*MdaK2tzd5f9BqadwMvPoKg.png)
 
 另外需要注意的是，Flux中的状态更新是事务性的，不同于简单的调用状态更新函数或者直接操作对象值，任何一个 Action 对象都是事务记录。可以把它类比于银行中的交易，当你存入一笔钱到你的账户时，并不会覆盖清除你5分钟之前的交易记录，而会将新的结算信息添加到事务的历史记录中。一个Action对象如下所示：
 ```
@@ -67,7 +67,7 @@ Action对象允许我们将所有对于对象的操作全部记录下来，而�
 - Time Travel Debugging（时间旅行大法）
 - 可重现性：即使某个状态已经被清除了，但是只要你保留有事务处理的历史记录，你就可以重现该状态
 
-[https://cdn-images-1.medium.com/max/800/1*KFJdTQCHH60QDDWTJobVRw.gif](https://cdn-images-1.medium.com/max/800/1*KFJdTQCHH60QDDWTJobVRw.gif)
+![https://cdn-images-1.medium.com/max/800/1*KFJdTQCHH60QDDWTJobVRw.gif](https://cdn-images-1.medium.com/max/800/1*KFJdTQCHH60QDDWTJobVRw.gif)
 ### 2.Some Apps Don't Need Redux
 
 如果你的 UI 工作流程很简单，用 Redux 就有点大材小用了。比如你打算弄一个剪刀锤子布的小游戏，你觉得你需要 Undo/Redo功能吗？这种游戏每局差不多一分钟左右吧，即使用户把游戏弄崩溃了，也只要简单的重启游戏即可。
@@ -174,7 +174,9 @@ const chatReducer = (state = defaultState, action = {}) => {
 如你所见，我们可以使用 `Object.assign()` 或者 Array 中的 `concat()` 函数来创建新的对象。如果你希望在JavaScript中如何使用纯函数，那么可以参考master-the-javascript-interview-what-is-a-pure-function这篇文章。
 
 ### 5.Reducer Must be the Single Source of Truth
-<video src="https://youtu.be/Y3lQSxNdr3c" source="https://youtu.be/Y3lQSxNdr3c"></video>
+
+<video><source src="https://youtu.be/Y3lQSxNdr3c" ></video>
+
 何谓Single Source of Truth？即应用中的所有状态都存放在单一的存储中，任何需要访问状态的地方都需要通过该存储的引用进行访问。当然，对于不同的业务逻辑/不同的事物可以设置不同的状态源，譬如URL可以认为是用户输入与请求参数的Single Source of Truth。而应用中存在某个Configuration Service用于存放所有的API URLs信息。而如果你选用Redux作为状态管理框架，任何对于状态的访问操作都必须通过Redux。换言之，如果你没有使用单一的状态存储源，你可能会失去如下的特性：
 
 - 可预测的视图渲染
@@ -299,7 +301,7 @@ export const changeUserName = (userName = 'Anonymous') => ({
 假如你已经构建好了一个数万行代码的复杂的聊天APP应用，然后该死的产品经理跟你说需要添加一个新的需求进去，而不得不要修改你现有的状态树中的数据结构。不方，这里介绍的Selector即是一种有效地将状态树的结构与应用的其他部分解耦和的工具。
 
 
-[https://cdn-images-1.medium.com/max/800/1*xRYkPbfOQTOSaFpUxJRGeA.gif](https://cdn-images-1.medium.com/max/800/1*xRYkPbfOQTOSaFpUxJRGeA.gif)
+![https://cdn-images-1.medium.com/max/800/1*xRYkPbfOQTOSaFpUxJRGeA.gif](https://cdn-images-1.medium.com/max/800/1*xRYkPbfOQTOSaFpUxJRGeA.gif)
 
 基本上对于我写的每个Reducer，我都会创建一个对应的Selector来将所有需要用于构建View的变量导出，对于简单的Chat Reducer，可能要如下所写：
 
