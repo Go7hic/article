@@ -63,4 +63,5 @@ category: HTML5
 通过上面的测试对比，你可以根据自己的需求，选择适合你的input 设置，如果你需要的是输入电话号码数字，那么用 tel 肯定是最合适的。
 
 
-
+附测试代码: 
+https://gist.github.com/dyygtfx/9844f6bc72471e4efe005ab43156184b
