@@ -10,7 +10,6 @@ class MarkdownWrapper extends React.Component {
     const post = route.page.data
     let layout
     let template
-
     layout = post.layout
 
     if (layout != 'page') {
