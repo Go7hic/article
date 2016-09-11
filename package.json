@@ -22,6 +22,7 @@
   "author": "Alexander Shelepenok <a.shelepenok@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.14.0",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
@@ -31,8 +32,8 @@
     "gatsby": "^0.12.0",
     "history": "^2.1.1",
     "lodash": "^4.14.1",
-    "moment": "^2.14.1",
     "markdown-it": "^6.0.2",
+    "moment": "^2.14.1",
     "react": "^15.3.0",
     "react-document-title": "^2.0.2",
     "react-dom": "^15.3.0",
