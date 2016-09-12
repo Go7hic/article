@@ -23,4 +23,12 @@ category: Git
 2.如果是提交发布后出现问题，需要回滚到前一次正常的代码，这时候我会用 `git revert  <commit log id>` 来回滚代码，revert 会创建一个新的提交来把上一次（具体哪次取决你填的哪个log id）的提交更改撤销，
 这样就可以保证你的代码安全了，而且上一次出现错误的提交记录也还在，下次 code review 的时候也可以查看哪里出了问题。
 
-当然 git reset 和 git revert 也都支持文件级别的回滚，还有上面的 <commit log id> 也可以通过 HEAD 这个参数来简化。
+当然 git reset 和 git revert 也都支持文件级别的回滚，还有上面的 ` <commit log id>` 也可以通过 HEAD 这个参数来简化。
+
+最后，对于使用 git 命令的同学，大家应该通过 alias 来设置快捷命令，比如：
+
+```
+ggpur='git pull --rebase origin $(current_branch)'
+ggpush='git push origin $(current_branch)'
+
+```
