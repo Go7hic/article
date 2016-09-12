@@ -5,7 +5,7 @@ datePublished: '2016-09-12 11:21:04'
 category: Git
 ---
 
-![git](https://www.processon.com/chart_image/57d6d2c0e4b0942d7aac49ce.png)
+![git](https://www.processon.com/chart_image/57d6deace4b0942d7aac7328.png)
 这是之前和别人说我的 Git 操作习惯的时候给画的一个一个简图。怎么说呢，Git 是很强大的，有些人用了很久可能Git的操作命令也没全用过，这很正常，而且每个团队的 Git 流程可能也不一样，但是社区有些最佳实践啥的
 大家应该都是同意的。
 
