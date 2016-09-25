@@ -19,79 +19,18 @@ PS：后面打算把之前记录在印象笔记里面的比较慢慢整理到博
 
 初学脚本语言通常不会来绘制图形界面、与人交互，iOS如果不做图形界面，像脚本语言一样处理文本操作数据库，就没啥意思了。
 
-所以，过去我写别的新手入门教程，通常都是写《XXX入门15分钟教程》，而iOS就要花数倍的时间来写了。
 
 ## 环境准备
 做iOS开发一定要有苹果的软件环境：Mac OS操作系统、Objective-C编译器、设备模拟器等，开发工具倒不一定要用Xcode，只要是个源代码编辑工具就行（vim都行，只是没Xcode那么多功能）。
 
 
 ### Mac OS
-拥有Mac OS环境最简单的方法是找一台苹果电脑，包括iMac, MacBook Pro, MacBook Air, Mac Mini，但不包括苹果的移动设备（iPod Touch, iPhone, iPad, iPad Mini，它们运行的是iOS系统，不是Mac OS），苹果电脑在出厂的时候就会预装Mac OS，目前最新版本是Mac OS X 10.8，主流的版本还有Mac OS X 10.6、Max OS X 10.7。
+拥有Mac OS环境最简单的方法是找一台苹果电脑，包括iMac, MacBook Pro, MacBook Air, Mac Mini，但不包括苹果的移动设备（iPod Touch, iPhone, iPad, iPad Mini，它们运行的是iOS系统，不是Mac OS），苹果电脑在出厂的时候就会预装Mac OS。
 
 如果囊中羞涩，可以借一台，或者上淘宝买个二手的。
 
 ###  Xcode 和 模拟器
-Xcode可以在苹果官网免费下载：[Xcode下载地址](https://developer.apple.com/Xcode/index.php)
-
-安装Xcode时会自动安装iOS SDK和模拟器。
-
-这么强大的IDE居然是免费的，还是挺让人开心的。
-
-
-## 从改一个现成的应用开始吧
-学一门新软件开发技能，能够第一时间做出一个可运行的产品非常重要，有助于给自己正面激励，我上大学的时候，有很多次想学一门新语言，往往花了半个月，还沉浸在数据类型和语法字典里，连第一个Hello World都没做出来。
-
-这一次，就让我们从改一个现成的应用开始吧。
-
-###  下载
-首先，我们从苹果开发者中心下载一个示例代码回来。我选了[ToolBarSearch](https://developer.apple.com/library/ios/samplecode/ToolbarSearch/ToolbarSearch.zip)。
-
-在本文档的末尾，还有一些其它的网址可以下载开源iOS产品或者代码段，但我试了一下，还是Apple Sample Code最容易成功。
-
-下载回来的zip文件最好保存在"下载"或者"文稿"目录里，因为在Mac OS 10.8以前，有些目录（例如/var/private/tmp）在Finder中是看不到的，要通过Finder的“前往 > 前往文件夹”功能才能进入。
-
-###  打开
-有三种方式可以打开一个iOS Project
-####  双击project文件
-打开Finder，进入刚刚下载解压的ToolBarSearch目录，找到ToolBarSearch.Xcodeproj文件，双击之，Xcode会自动启动，并打开这个项目
-
-#### 在Xcode里选择Project打开
-- 在Xcode没启动的情况下（如果Xcode已经启动了，就先按Command Q退出），启动Xcode，会弹出“Welcome to Xcode”的欢迎页，点击左下角的“Open Other”按钮，找到ToolBarSearch目录，双击ToolBarSearch目录，或者双击ToolBarSearch.Xcodeproj文件都可以
-
-- 如果Xcode处于打开状态，可以点击其菜单栏的File -> Open，或者File -> Open Recent，然后再选择要打开的项目
-
-####  通过命令行打开
-在Mac OS 10.8以前，有些目录（例如/var/private/tmp），在Finder和Xcode的File > Open对话框中，点击鼠标是找不到的，这时候就要通过命令行终端来打开了。
-
-打开终端，执行：
-
-	cd /ToolBarSearch的父目录/ToolBarSearch
-	open -a Xcode
-
-open -a是mac os的系统命令，除了iOS项目，别的项目也可以这样打开。
-
-###  运行刚下载的应用
-点击Xcode左上角的Run按钮（或者同时按下Comman和R键），Xcode会编译源码并在模拟器中运行这个应用。
-
-编译成功会在屏幕上淡淡地显示“Build Succeeded”。反之，失败就显示“Build Failed”且不启动模拟器。
-
-
-### 修改
-在模拟器上看到“Performed search using…”了吧，下面我们改掉它。
-
-- 在Xcode左上角的Run按钮下方，有一排小按钮，从左到右第三个是一个放大镜图标，鼠标移上去会显示“Show the Search Navigator”，点一下它，打开搜索界面，在它下方出现的Find输入框中输入“performed”
-
-- 搜索结果只有一条：ToolbarSearchViewController.m，点文件名下方被高亮的“Performed”字串，右侧代码编辑区会自动打开这个文件，并滚动屏幕，使包含“Performed”的这一行出现在编辑区的中间。
-
-- 修改双引号里的字串，随便改成啥，然后按“Command S”保存。
-
-当然，这些操作，你也可以在终端下通过grep和vim完成。
-
-###  运行修改后的应用
-按Command R运行，看看，是不是看到效果啦？
-
-是的，修改一个应用就这么简单。
-
+在 appstore 里面安装 xcode，挺大的估计要安装一会，最好是安装官方的，第三方提供的安装包小心安全风险
 
 ## Objective-C
 Objective-C是苹果应用软件（包括苹果电脑上的Mac OS App和移动设备上的iOS App）的开发语言。它是一种面向对象的编程语言。
