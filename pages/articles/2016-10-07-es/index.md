@@ -6,19 +6,19 @@ category: javaScript
 ---
 
 ## 前传
-#### 基础知识
+### 基础知识
 ES6作为ECMAScript的最新版本，在ES6发布的近6年后才被正式标准化（2009年12月 vs 2015年6月）。 导致这么长跨度的主要原因有两个：
 
 所有的特性无论先后，都必须等待新的发行版本（release）完全制定完成后才能公布；
 有些特性未能完全达成一致，从而造成了整个发行版本的延迟。如果这些特定推迟到下一个发行版本，那么将会耗费更多的时间。
 为了避免这种缓慢的发行版本更新策略，从ECMAScript 2016(ES7)开始，版本的发布将会变得更加频繁， 这也意味着未来每个新的发行版本都会包含尽可能少的特性，而发行周期则缩短为1年，并且每年只发行确保一年期限内能够完成的所有特性。 为了向你简要的介绍新的版本发行策略，首先需要介绍的是TC39。
 
-#### 技术委员会39 （Technical Committee 39 - TC39）
+### 技术委员会39 （Technical Committee 39 - TC39）
 TC39（ECMA技术委员为39）是推动JavaScript发展的委员会。 它的成员是都是企业（主要是浏览器厂商）。TC39会定期的开会， 会议的主要成员时是成员公司的代表，以及受邀请的专家。 你可以参考网络上的一个有关TC39会议的会议纪要来了解TC39是如何工作。
 
 在本文中，通常我们用“TC39成员”这个术语来指代一个具体的人，他是由TC39成员公司所委派的会议代表。 有一点值得注意的是，TC39必须达成全员一致的协议：决策只有被所有的成员单位一致同意时才能被做出。
 
-#### TC39的过程
+### TC39的过程
 针对ECMAScript特性的每一个提议都需要经历以下几个成熟阶段，从阶段0开始。从一个阶段递交到下一个阶段必须要收到TC39的全员同意。
 
 - Stage 0：strawman 稻草人
@@ -64,7 +64,7 @@ TC39（ECMA技术委员为39）是推动JavaScript发展的委员会。 它的�
 
 下一步：该提议会被尽可能快的纳入到ECMAScript标准中。当标准通过长达一年的时间获得通过后，该提议将正式作为标准的其一部分。
 
-#### 不要称它们为ECMAScript 20xx特性
+### 不要称它们为ECMAScript 20xx特性
 正如你看到的那样，只有到了阶段4，该特性才会被确定加入到标准中。然后会在下一次的ECMAScript发布中出现该提议， 当然也并非是百分百的，也可能需要更长的时间。因此，你不应该称提议为“ES7特性”或者“ES2016特性”等等。我通常喜欢的称法如下：
 
 - ECMAScript建议：某特性。该建议所处的阶段应该在文章的一开始就被说明。
@@ -72,149 +72,176 @@ TC39（ECMA技术委员为39）是推动JavaScript发展的委员会。 它的�
 如果该提议几经进入阶段4，那么我会称他为ES20XX特性，当然最安全的做法是等到标准的编辑已经确认该下一个发布会包含该特性后才行。 例如Object.observe就是ECMAScript提议被进展到阶段2，却又最终被撤回的个例子。
 
 ## ES2016
-#### 1.乘方运算符
 
-    >6 ** 2
-    36
+### 1.乘方运算符
 
-和 Math.pow(6, 2)的结果是一样的
 
-Example:
+```js
+>6 ** 2
+36
+```
 
-    let squared = 3 ** 2; // 9
-    
-    let num = 3;
-    num **= 2;
-    console.log(num); // 9
+和 Math.pow(6, 2)的结果是一样的.
 
-#### 2.Array.prototype.includes
+```js
+let squared = 3 ** 2; // 9
+
+let num = 3;
+num **= 2;
+console.log(num); // 9
+```
+### 2.Array.prototype.includes
 Array.prototype.includes() 返回一个 布尔值
 
 用法：
+
 Array.prototype.includes(value : any) : boolean
 
-    > ['a', 'b', 'c'].includes('a')
-    true
-    > ['a', 'b', 'c'].includes('d')
-    false
+```js
+> ['a', 'b', 'c'].includes('a')
+true
+> ['a', 'b', 'c'].includes('d')
+false
+```
 
 includes 方法和数组里的 indexOf 有点类似，唯一有点不同的就是 includes()可以查找判断 NaN，indexOf() 方法不支持
-   
-    > [NaN].includes(NaN)
-    true
-    > [NaN].indexOf(NaN)
-    -1
+
+```js 
+> [NaN].includes(NaN)
+true
+> [NaN].indexOf(NaN)
+-1
+```
 
 另外 includes 方法不区分 +0和-0
 
-    > [-0].includes(+0)
-    true
+```js
+> [-0].includes(+0)
+true
+```
 
 ## ES2017
-#### Object.entries() 和 Object.values()
+### Object.entries() 和 Object.values()
 
 Object.entries() 返回一个所有元素为键值对的数组，其中键值对来自于给定的对象上面可直接枚举属性的属性名与属性值，这些键值对的顺序以键（属性名）为参考，与手动遍历该对象属性时的一致。
 [Object.entries() - JavaScript | MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
 
-    let obj = { one: 1, two: 2 };
-    for (let [k,v] of Object.entries(obj)) {
-        console.log(`${JSON.stringify(k)}: ${JSON.stringify(v)}`);
-    }
-    // Output:
-    // "one": 1
-    // "two": 2
+```js
+let obj = { one: 1, two: 2 };
+for (let [k,v] of Object.entries(obj)) {
+    console.log(`${JSON.stringify(k)}: ${JSON.stringify(v)}`);
+}
+// Output:
+// "one": 1
+// "two": 2
+```
 
 将Object转化为Map对象
 
 new Map() 构造函数接受一个包含键值对元素的可迭代数组。 借助Object.entries方法你可以很容易的将Object转换为Map:
 
-    var obj = { foo: "bar", baz: 42 }; 
-    var map = new Map(Object.entries(obj));
-    console.log(map); // Map { foo: "bar", baz: 42 }
+```js
+var obj = { foo: "bar", baz: 42 }; 
+var map = new Map(Object.entries(obj));
+console.log(map); // Map { foo: "bar", baz: 42 }
+```
 
 Object.values()返回的数组元素的值和单独访问对象属性的值是一样的。数组元素的值在数组的顺序，和使用for-in循环遍历的一样。
 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/values
 
-    > Object.values({ one: 1, two: 2 })
-    [ 1, 2 ]
+```js
+> Object.values({ one: 1, two: 2 })
+[ 1, 2 ]
+```
 
-#### 新的字符串方法 padStart 和 padEnd
+### 新的字符串方法 padStart 和 padEnd
 
 ECMAScript 2017 新加了两个字符串的方法 padStart 和 padEnd
 
-    > 'x'.padStart(5, 'ab')
-    'ababx'
-    > 'x'.padEnd(5, 'ab')
-    'xabab'
+```js
+> 'x'.padStart(5, 'ab')
+'ababx'
+> 'x'.padEnd(5, 'ab')
+'xabab'
+```
 
-padStart() 方法会用第二个参数中指定的填充字符串，在当前字符串的头部不断填充，直到它达到第一个参数中指定的目标长度。
+`padStart()` 方法会用第二个参数中指定的填充字符串，在当前字符串的头部不断填充，直到它达到第一个参数中指定的目标长度。
 
-*参数*
+**参数**
 
 - targetLength
+
 当前字符串需要填充到的目标长度。如果当前字符串原本就达到了该长度，那么该方法什么都不会做，直接返回原字符串。
 - padString 可选
+
 填充字符串。如果在填充过程中发现用不完这一整个填充字符串，则优先用左侧部分，能用多少用多少。该参数为可选参数，默认值为空格 " " (U+0020).
 
-    'abc'.padStart(10);         // "       abc"
-    'abc'.padStart(10, "foo");  // "foofoofabc"
-    'abc'.padStart(6,"123465"); // "123abc"
+```js
+'abc'.padStart(10);         // "       abc"
+'abc'.padStart(10, "foo");  // "foofoofabc"
+'abc'.padStart(6,"123465"); // "123abc"
+```
 
 一个简单的 panStart 实现
 
-    String.prototype.padStart =
-    function (maxLength, fillString=' ') {
-        let str = String(this);
-        if (str.length >= maxLength) {
-            return str;
-        }
-    
-        fillString = String(fillString);
-        if (fillString.length === 0) {
-            fillString = ' ';
-        }
-    
-        let fillLen = maxLength - str.length;
-        let timesToRepeat = Math.ceil(fillLen / fillString.length);
-        let truncatedStringFiller = fillString
-            .repeat(timesToRepeat)
-            .slice(0, fillLen);
-        return truncatedStringFiller + str;
-    };
+```js
+String.prototype.padStart =
+function (maxLength, fillString=' ') {
+    let str = String(this);
+    if (str.length >= maxLength) {
+        return str;
+    }
+    fillString = String(fillString);
+    if (fillString.length === 0) {
+        fillString = ' ';
+    }
+    let fillLen = maxLength - str.length;
+    let timesToRepeat = Math.ceil(fillLen / fillString.length);
+    let truncatedStringFiller = fillString
+        .repeat(timesToRepeat)
+        .slice(0, fillLen);
+    return truncatedStringFiller + str;
+};
+```
 
-padEnd() 方法会用第二个参数中指定的填充字符串，在当前字符串的尾部不断填充，直到它达到第一个参数中指定的目标长度。
-参数
+`padEnd()` 方法会用第二个参数中指定的填充字符串，在当前字符串的尾部不断填充，直到它达到第一个参数中指定的目标长度。
+
+**参数**
 
 - targetLength
+
 当前字符串需要填充到的目标长度。如果当前字符串原本就达到了该长度，那么该方法什么都不会做，直接返回原字符串。
 - padString 可选
+
 填充字符串。如果在填充过程中发现用不完这一整个填充字符串，则优先用左侧部分，能用多少用多少。该参数为可选参数，默认值为空格 " " (U+0020).
 
-    'abc'.padEnd(10);         // "abc       "
-    'abc'.padEnd(10, "foo");  // "abcfoofoof"
-    'abc'.padEnd(6,"123465"); // "abc123"
+```js
+'abc'.padEnd(10);         // "abc       "
+'abc'.padEnd(10, "foo");  // "abcfoofoof"
+'abc'.padEnd(6,"123465"); // "abc123"
+```
+### Object.getOwnPropertyDescriptors()
 
-#### Object.getOwnPropertyDescriptors()
-
-Object.getOwnPropertyDescriptors() 方法用来获取一个对象的所有自身属性的描述符。
+`Object.getOwnPropertyDescriptors()`  方法用来获取一个对象的所有自身属性的描述符。
 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors
 
-    const obj = {
-        [Symbol('foo')]: 123,
-        get bar() { return 'abc' },
-    };
-    console.log(Object.getOwnPropertyDescriptors(obj));
-    
-    // Output:
-    // { [Symbol('foo')]:
-    //    { value: 123,
-    //      writable: true,
-    //      enumerable: true,
-    //      configurable: true },
-    //   bar:
-    //    { get: [Function: bar],
-    //      set: undefined,
-    //      enumerable: true,
-    //      configurable: true } }
+```js
+const obj = {
+    [Symbol('foo')]: 123,
+    get bar() { return 'abc' },
+};
+console.log(Object.getOwnPropertyDescriptors(obj));
 
+// Output:
+// { [Symbol('foo')]:
+//    { value: 123,
+//      writable: true,
+//      enumerable: true,
+//      configurable: true },
+//   bar:
+//    { get: [Function: bar],
+//      set: undefined,
+//      enumerable: true,
+//      configurable: true } }
+```
 参考 [Read Exploring ES2016 and ES2017 | Leanpub](https://leanpub.com/exploring-es2016-es2017/read#leanpub-auto-dont-call-them-ecmascript-20xx-features)
