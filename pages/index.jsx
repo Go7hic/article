@@ -13,13 +13,13 @@ class SiteIndex extends React.Component {
   render() {
     const pageLinks = []
     // Sort pages.
-    const sortedPages = sortBy(this.props.route.pages, (page) => access(page, 'data.date')
+    const sortedPages = sortBy(this.props.route.pages, (page) => access(page, 'data.datePublished')
     ).reverse()
     sortedPages.forEach((page, index) => {
       if (access(page, 'file.ext') === 'md' && access(page, 'data.layout') === 'post') {
         const title = access(page, 'data.title') || page.path
         const description = access(page, 'data.description')
-        const datePublished = access(page, 'data.date')
+        const datePublished = access(page, 'data.datePublished')
         const category = access(page, 'data.category')
 console.log(page.path)
         pageLinks.push(
@@ -29,7 +29,10 @@ console.log(page.path)
             </time>
             <span style={ { padding: '5px' } }></span>
             <span className='blog-category'>{ category }</span>*/}
-            <h2><Link style={ { borderBottom: 'none', } } to={ prefixLink(page.path) } > { title } </Link></h2>
+            <h2><Link style={ { borderBottom: 'none', } } to={ prefixLink(page.path) } > { title } </Link><time dateTime={ moment(datePublished).format('YYYY-MM-DD') }>
+              { moment(datePublished).format('YYYY-MM-DD') }
+            </time></h2>
+            
             {/* <p dangerouslySetInnerHTML={ { __html: description } } /> */}
             
             

@@ -1,5 +1,5 @@
 .blog-post {
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
 }
 
 .blog-post:last-child {
@@ -9,7 +9,8 @@
 .blog-post h2 {
 	margin-top: 10px;
 	line-height: 30px;
-	margin-bottom: 20px;
+	/*margin-bottom: 20px;*/
+	font-size: 1.1rem!important;
 	font-weight: lighter;
 }
 
@@ -25,7 +26,7 @@
 
 .blog-post time {
 	font-size: 14px;
-	color: #222;
+	color: #b6b6b6;
 	font-weight: 500;
 	text-transform: uppercase;
 }
