@@ -2,7 +2,7 @@
 layout: post
 title: HTTPS 就安全了嘛
 datePublished: '2016-10-31 23:21:04'
-category: react-native
+category: web 安全
 ---
 
 大概从去年开始国内的 HTTPS 越来越普及了，现在国内的主流应用基本都配置了 HTTPS。
