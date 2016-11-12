@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 写给前端的 iOS开发教程：熟悉 CocoaPods
+title: 写给前端的 iOS 开发教程(2)：熟悉 CocoaPods
 datePublished: '2016-09-16 11:21:04'
 category: iOS
 ---
