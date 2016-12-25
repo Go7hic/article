@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2017年值得学习的JavaScript框架和内容
+title: 2017年值得学习的JavaScript框架和内容【译】
 datePublished: '2016-12-25 11:21:04'
 category: JavaScript
 ---
