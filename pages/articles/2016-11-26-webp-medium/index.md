@@ -146,7 +146,7 @@ WebP image format ✔ 61.31% ◒ 1.31% [Unofficial / Note]
 ```HTML
 <div class="container">
     <div class="img-placeholder"></div>
-    <img class="img img-small J-webp" src="/pj_appinvite/public/images/perch.jpg" data-large="/pj_appinvite/public/images/body.jpg" data-largewebp="/pj_appinvite/public/images/body.jpg.webp" alt="">
+    <img class="img img-small" src="/pj_appinvite/public/images/perch.jpg" data-large="/pj_appinvite/public/images/body.jpg" data-largewebp="/pj_appinvite/public/images/body.jpg.webp" alt="">
   </div>
 ```
 
