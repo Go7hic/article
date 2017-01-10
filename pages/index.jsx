@@ -21,7 +21,6 @@ class SiteIndex extends React.Component {
         const description = access(page, 'data.description')
         const datePublished = access(page, 'data.datePublished')
         const category = access(page, 'data.category')
-console.log(page.path)
         pageLinks.push(
           <div className='blog-post' key={index}>
             {/*<time dateTime={ moment(datePublished).format('MMMM D, YYYY') }>
