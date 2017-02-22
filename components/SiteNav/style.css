@@ -14,7 +14,7 @@
 	margin-bottom: 26px;
 	border-bottom: 0;
 	font-weight: 100;
-	color: #222;
+	color: rgb(102, 102, 102);
 }
 .blog-nav ul li a.current {
 	border-bottom: 1px solid;
