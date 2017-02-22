@@ -15,4 +15,4 @@ path: "/contact"
 [V2ex](https://www.v2ex.com) :
 V 站是我每天必看的社区，虽然上面的帖子水平越来越低，但是 V 站上面潜伏着太多大神了
 
-如果你有意见反馈或者想请我喝杯咖啡欢迎邮件勾搭：admin#yongyuan.us
+如果你有意见反馈或者想请我喝杯咖啡欢迎邮件勾搭：gtfx0209#####gmail.com
