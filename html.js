@@ -33,8 +33,8 @@ module.exports = React.createClass({
         <body>
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: this.props.body }} />
           <footer>
-              <p className='copyright'>
-                &copy; 2016 All rights reserved.
+              <p className='copyright' style={{ textAlign: 'center' }}>
+                &copy; 2016-2017 All rights reserved
               </p>
           </footer>
           <script src={prefixLink(`/bundle.js?t=${BUILD_TIME}`)} />
