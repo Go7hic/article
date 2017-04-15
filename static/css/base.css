@@ -2,10 +2,12 @@
 	lost-center: 1070px;
 }
 .content {
-	lost-column: 2/3;
+	/*lost-column: 2/3;*/
+	display: flex;
+	justify-content: center;
 }
 .main-inner {
-	padding: 40px 35px;
+	padding: 0 35px 10px;
 }
 @media screen and (max-width:1100px) {
 	.content {

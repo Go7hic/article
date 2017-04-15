@@ -6,7 +6,8 @@
 	padding-left: 0;
 }
 .blog-nav ul li {
-	margin: 10px 0 10px;
+	display: inline-block;
+	margin: 10px;
 }
 .blog-nav ul li a {
 	font-size: 16px;

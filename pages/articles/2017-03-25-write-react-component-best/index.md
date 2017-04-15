@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【译】我们编写 React 组件的最佳实践
+title: 我们编写 React 组件的最佳实践【译】
 datePublished: '2017-03-25 11:21:04'
 category: React
 ---
@@ -92,7 +92,6 @@ export default class ProfileContainer extends Component {
 ```
 
 propTypes 和 defaultProps 是静态的属性，需要尽可能早的在组件代码中声明。因为它们是作为文档而存在的，所以当其他开发者在阅读代码时候，它们应该尽早被看到。
-
 
 所有的组件都应该有 propTypes。
 
