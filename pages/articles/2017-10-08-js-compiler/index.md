@@ -1,4 +1,10 @@
-用 JavaScript 写一个简单的编译器
+---
+layout: post
+title: 用 JavaScript 写一个简单的编译器
+datePublished: '2017-10-09 11:21:04'
+category: 编译
+---
+
 
 注：本文来自 https://github.com/thejameskyle/the-super-tiny-compiler 
 
