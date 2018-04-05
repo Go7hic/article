@@ -5,7 +5,7 @@ path: "/contact"
 ---
 
 
-twitter: [Go7hic](https://twitter.com/Go7hic) 
+Twitter: [Go7hic](https://twitter.com/Go7hic) 
 
 
-  email: Z3RmeDAyMDlAZ21haWwuY29t
+Email: Z3RmeDAyMDlAZ21haWwuY29t【base64】

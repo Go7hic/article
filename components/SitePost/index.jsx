@@ -37,8 +37,10 @@ class SitePost extends React.Component {
 
           </div>
           <div className="footer">
+            
             <ReadNext post={post} {...this.props} />
-            <hr></hr>
+          
+            <p style={{ textAlign: 'center'}}>【End】</p>
           </div>
         </div>
       </div>

@@ -14,10 +14,6 @@ class SiteNav extends React.Component {
             </Link>
           </li>
           <li>
-            <Link to="/book" className={ location.pathname === prefixLink('/book') ? "current" : null }> Book
-            </Link>
-          </li>
-          <li>
             <Link to="/about" className={ location.pathname === prefixLink('/about') ? "current" : null }> About
             </Link>
           </li>
@@ -25,6 +21,11 @@ class SiteNav extends React.Component {
             <Link to="/contact" className={ location.pathname === prefixLink('/contact') ? "current" : null }> Contact
             </Link>
           </li>
+          <li>
+            <Link to="/donate" className={ location.pathname === prefixLink('/donate') ? "current" : null }> Donate
+            </Link>
+          </li>
+          
           <li>
             <Link to="/links" className={ location.pathname === prefixLink('/links') ? "current" : null }> Links
             </Link>

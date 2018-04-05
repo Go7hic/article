@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 用 JavaScript 写一个简单的编译器
+title: 用 JavaScript 写一个简单的编译器【译】
 datePublished: '2017-10-09 11:21:04'
 category: 编译
 ---
