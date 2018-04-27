@@ -82,7 +82,9 @@
 	line-height: 31px;
 	margin-bottom: 31px;
 }
-
+.blog-single a, .blog-single a:hover {
+	color: #5d93ff;
+}
 .gohome {
 	position: fixed;
 	left: 20px;
