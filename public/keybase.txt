@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/go7hic
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://blog.yongyuan.us
+  * I am go7hic (https://keybase.io/go7hic) on keybase.
+  * I have a public key with fingerprint 093F 4C3C 7FF4 7B9C DC4F  D095 8C4E DA4D A4B6 F9F7
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101263e47e0249e09d9e2a2a50dc9fdac6334fb7bb7e68085a3b5473499cf4cd8500a",
+      "fingerprint": "093f4c3c7ff47b9cdc4fd0958c4eda4da4b6f9f7",
+      "host": "keybase.io",
+      "key_id": "8c4eda4da4b6f9f7",
+      "kid": "0101263e47e0249e09d9e2a2a50dc9fdac6334fb7bb7e68085a3b5473499cf4cd8500a",
+      "uid": "e9dcf9dc0d571d00eeb7ffc06891ee19",
+      "username": "go7hic"
+    },
+    "service": {
+      "hostname": "blog.yongyuan.us",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1546681138,
+  "expire_in": 157680000,
+  "prev": "e5e5b860b6e93d2c1f6bb462224516f0fe3fb1d2c0bda2557f4c881614b20c38",
+  "seqno": 4,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.80
+Comment: https://keybase.io/crypto
+
+yMIpAnicrVJbSBRRGF6ztDYisZfNhGoqo7L1zH1mCX3QKETCFELBWudcZh1cZ3Z3
+Zq1lyWDDqMAUikgCsXyqCKGWRLTbGkhXi8qiyG5EBSU9SEVWdEbsrccO53A4//99
+3/n+n//GomyPNysPLBu9aD76lnX7enfc0wCSXJKBFk4wgSTTTGYuEsbEdoLNBmYC
+DGABy0k8EWQCOEElQMUq4TROEwFGqo41JPG8oEMZQplIClBEjYeiIPOCqiJdQFgR
+AdCYYkY3zBCJRWKG6biyKk+TPJJ1XZChijASdAxUUUECwZpAN5R0VZcpscmyXQY1
+BzWb+A2LxugjOGPvH/j/7Ds+I0dUjHR6ABZlFgNACKTWEZAUlSWEVV2gTWKm1kIo
+OmTJTQZi9hYzNNZqIOK21a1jNg/DVsifsMxQIq6Z/rhN2ZGY5VjICtNsk+NE7IDL
+dhIRF76bwOCsUBAaJqadpIxWErMNy2QCLEUix3CVWVGQJIVleaWYIXsiRowEDRch
+yrREutx/SKtbj0hEqEgASkTlMYdYXYJQkDiOE0RW0oFOeB2yNAEg1jhRlGlLFIWV
+WAFyAPEK45YWNS0mIFCbWohK2kbI1Jx4jDB7M9ca5nqyvJ6ceXPcCfN4F+T9nbsz
+4dzfarovM1ZaMZ2u7K7/vOteZe/61+KVnvdLawcPHg692z86+WxhJtt62nVET4Oh
+uZ1tj32bppZMXb38caBKC75Nnfr8A274Xl5VNNBfeHZ88qH/Zvmx5eH2naIv2rHt
+wZN1pT/nPe55drniRe1A/4qOMd/ztY2pVPRW2YVzZZf4+zX5qyaaRzwjgWXDtU8/
+vR/51dC1T6vuLCmpaz+wI1ow6Tt9/uiH8IvxaMngxuOHel8uxsm2WzUv7wwnc+yy
+xNX6oRPZE28mCgteeQdXltbnhpWidNaW+c2N1au9Tvm+uHJ3fOvY112o7Mfyo2tu
+333b/iU1fbKuLhPZvN7fMtiXyF/g2/4HOb1FYQ==
+=rcq3
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/go7hic
+
+==================================================================
