@@ -9,7 +9,7 @@ module.exports = React.createClass({
   propTypes: {
     body: React.PropTypes.string,
   },
-  componentDidMount() {
+  componentDidMount: function(){
 
     var _hmt = _hmt || [];
 
@@ -17,7 +17,6 @@ module.exports = React.createClass({
     hm.src = "https://hm.baidu.com/hm.js?c3827e63853493a9fffae3721ae0712f";
     var s = document.getElementsByTagName("script")[0]; 
     s.parentNode.insertBefore(hm, s);
-
 
   },
   render () {
