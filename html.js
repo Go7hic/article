@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react'
 import DocumentTitle from 'react-document-title'
 import { prefixLink } from 'gatsby-helpers'
@@ -8,6 +9,17 @@ module.exports = React.createClass({
   propTypes: {
     body: React.PropTypes.string,
   },
+  componentDidMount() {
+
+    var _hmt = _hmt || [];
+
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?c3827e63853493a9fffae3721ae0712f";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+
+
+  },
   render () {
     const { body, route } = this.props
     const title = DocumentTitle.rewind()
@@ -16,6 +28,7 @@ module.exports = React.createClass({
     if (process.env.NODE_ENV === 'production') {
       css = <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />
     }
+
     return (
       <html lang="en">
         <head>
@@ -27,6 +40,7 @@ module.exports = React.createClass({
             { title }
           </title>
           { css }
+          
         </head>
         <body>
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: this.props.body }} />
