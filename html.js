@@ -9,16 +9,6 @@ module.exports = React.createClass({
   propTypes: {
     body: React.PropTypes.string,
   },
-  componentDidMount: function(){
-
-    var _hmt = _hmt || [];
-
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?c3827e63853493a9fffae3721ae0712f";
-    var s = document.getElementsByTagName("script")[0]; 
-    s.parentNode.insertBefore(hm, s);
-
-  },
   render () {
     const { body, route } = this.props
     const title = DocumentTitle.rewind()
