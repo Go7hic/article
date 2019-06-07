@@ -10,6 +10,7 @@ path: "/use"
 - 显示器：DELL P2415Q
 - 手机：iPhonXR
 - 手表：iWatch 4
+- 耳机：AirPods2
 - 阅读：Kindle 4代
 - 机械键盘：Filco 圣手二代侧刻
 - 鼠标：罗技轨迹球 M570、雷柏 MT750S
