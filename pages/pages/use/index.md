@@ -20,9 +20,10 @@ path: "/use"
 - Google Cloud 搭的梯子和 vultr 搭的梯子、公司的梯子
 
 #### 一些常用的 Mac 软件
-- 浏览器：Google Chrome、Google Chrome Canary、TorBrowser
+- 浏览器：Google Chrome、Google Chrome Canary、TorBrowser、DuckDuckGo 插件
 - 编辑器/IDE：VSCode、Vim、IntelliJ、PyCharm、XCode
 - 编程字体：Dank Mono
+- 输入法：rime
 - 命令行终端：iTerm2 + zsh + oh-my-zsh + 一堆插件
 - 邮件：网易邮箱大师 管理 Gmail，QQ、企业邮件等
 - RSS: Reeder3 + inoreader
