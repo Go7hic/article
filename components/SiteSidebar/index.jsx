@@ -16,9 +16,9 @@ class SiteSidebar extends React.Component {
       <header>
        
         { isHome ? (
-          <h1><Link style={ { textDecoration: 'none', borderBottom: 'none', color: 'inherit' } } to={ prefixLink('/') }> <img src={ siteLogo } alt="logo"/> </Link></h1>
+          <h1><Link style={ { textDecoration: 'none', padding: '1px 5px',background: '#444', color: '#fff', borderBottom: 'none' } } to={ prefixLink('/') }>Go7hic</Link></h1>
         ) :
-          <h2><Link style={ { textDecoration: 'none', borderBottom: 'none', color: 'inherit' } } to={ prefixLink('/') }> <img src={ siteLogo } alt="logo"/></Link></h2> }
+          <h2><Link style={ { textDecoration: 'none', padding: '1px 5px', background: '#444', color: '#fff', borderBottom: 'none' } } to={ prefixLink('/') }>Go7hic</Link></h2> }
         <p>
           { config.siteDescr }
         </p>
