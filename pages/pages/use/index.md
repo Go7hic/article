@@ -13,11 +13,11 @@ path: "/use"
 - 耳机：AirPods2
 - 阅读：Kindle 4代
 - 机械键盘：Filco 圣手二代侧刻
-- 鼠标：罗技轨迹球 M570、雷柏 MT750S
+- 鼠标：罗技轨迹球 M570、雷柏 MT750S...
 - 移动硬盘：SAMSUNG T5
 
 #### 科学上网
-- Google Cloud 搭的梯子和 vultr 搭的梯子、公司的梯子
+- 不能说的秘密
 
 #### 一些常用的 Mac 软件
 - 浏览器：Google Chrome、Google Chrome Canary、TorBrowser、DuckDuckGo 插件
@@ -33,4 +33,5 @@ path: "/use"
 - 密码管理：Enpass
 - 快捷工具：Alfred3
 - 分屏工具：Magent
+...
 
