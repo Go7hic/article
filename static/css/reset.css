@@ -4,6 +4,8 @@ html {
 }
 body {
 	margin: 0;
+	background: #263238;
+	color: rgba(255, 255, 255, 0.8);
 }
 
 /* HTML5 display definitions
@@ -53,7 +55,7 @@ dfn {
 }
 mark {
 	background: #ff0;
-	color: #000;
+	color: #fff;
 }
 small {
 	font-size: 70%;

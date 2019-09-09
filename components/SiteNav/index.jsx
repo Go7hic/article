@@ -37,10 +37,7 @@ class SiteNav extends React.Component {
             <Link to="/code" className={ location.pathname === prefixLink('/code') ? "current" : null }> Code
             </Link>
           </li>
-          <li>
-            <Link to="/use" className={ location.pathname === prefixLink('/use') ? "current" : null }> Use
-            </Link>
-          </li>
+        
           <li>
             <Link to="/links" className={ location.pathname === prefixLink('/links') ? "current" : null }> Links
             </Link>

@@ -83,7 +83,7 @@
 	margin-bottom: 31px;
 }
 .blog-single a, .blog-single a:hover {
-	color: #5d93ff;
+	color: #1bc9cae0;
 }
 .gohome {
 	position: fixed;
@@ -91,8 +91,8 @@
 	font-size: 16px;
 	text-align: center;
 	padding: 8px 16px;
-	color: #999;
-	background: #f4f4f4;
+	color: #1bc9cae0;
+    background: #263238;
 	font-weight: 400;
 	border-radius: 3px;
 }
@@ -114,8 +114,8 @@ a:hover {
 }
 
 blockquote {
-	border-left: 1px solid #444;
-	background: #f8f8f8;
+	border-left: 1px solid #d14;
+	background: #44558896;
 	font-style: normal;
 }
 @media (max-width:900px) {
