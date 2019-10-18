@@ -15,6 +15,10 @@ class SiteIndex extends React.Component {
     super(prop);
   }
 
+  componentDidMount() {
+    window.location.href = 'https://yongyuan.us/blog/'
+  }
+
   componentWillReceiveProps(nextProps) {
     console.log(nextProps);
   }
