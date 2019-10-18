@@ -5,9 +5,10 @@ import SitePage from '../components/SitePage'
 import { config } from 'config'
 
 class MarkdownWrapper extends React.Component {
-  componentDidMount {
+  componentDidMount() {
     window.location.href = 'https://yongyuan.us/blog/'
   }
+  
   render () {
     const { route } = this.props
     const post = route.page.data
